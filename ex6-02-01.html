@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Условные инструкции</title>
+<link href="https://fonts.googleapis.com/css?family=Marck+Script|Ubuntu:700&amp;subset=cyrillic" rel="stylesheet">
+<link href="styles.css" rel="stylesheet" type="text/css">
+<style>
+ul {
+    color: #eee;
+    list-style-type: none;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+}
+li {
+    margin-bottom: 10px;
+}
+.none {
+    text-decoration: line-through;
+    color: #999;
+}
+</style>
+</head>
+
+<body>
+<h1>Планирование вечера в пятницу</h1>
+
+<script>
+let cash = prompt('Сколько денег вы можете потратить?');
+if(cash>=3000) document.write('<p>Вы можете поужинать в ресторане.</p>');
+else if(cash>=1000)document.write('<p>Вы можете поужинать в кафе.</p>');
+else if(cash>=500)document.write('<p>Вы можете сходить в кино.</p>');
+else document.write('<p>Оставайтесь дома!</p>');
+</script>
+</body>
+</html>
